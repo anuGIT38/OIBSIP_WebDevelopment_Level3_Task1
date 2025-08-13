@@ -1,0 +1,143 @@
+.order-history-page {
+  background: #f8f9fa;
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+.order-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.order-header h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.order-header p {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #e74c3c;
+}
+
+.order-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.order-header-row h3 {
+  margin: 0 0 0.25rem 0;
+  color: #2c3e50;
+}
+
+.order-date {
+  color: #6c757d;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.order-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.status-icon {
+  font-size: 1.2rem;
+}
+
+.status-icon.delivered {
+  color: #28a745;
+}
+
+.status-icon.transit {
+  color: #ffc107;
+}
+
+.status-icon.pending {
+  color: #6c757d;
+}
+
+.order-items {
+  margin-bottom: 1rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item span:first-child {
+  flex: 1;
+  font-weight: 500;
+}
+
+.order-item span:nth-child(2) {
+  color: #6c757d;
+  margin: 0 1rem;
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.order-total {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.order-rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.star {
+  color: #e9ecef;
+  font-size: 1rem;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+@media (max-width: 768px) {
+  .order-header-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .order-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}

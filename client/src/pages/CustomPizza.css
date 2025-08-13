@@ -1,0 +1,99 @@
+.custom-page {
+  background: #f8f9fa;
+  padding: 2rem 0;
+}
+.custom-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.custom-icon {
+  font-size: 2rem;
+  color: #e74c3c;
+}
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.custom-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.option.active {
+  border-color: #e74c3c;
+  background: #fff5f4;
+}
+
+.option.low-stock {
+  border-color: #ffc107;
+  background: #fff3cd;
+}
+
+.option.low-stock.active {
+  background: #e74c3c;
+  color: white;
+  border-color: #e74c3c;
+}
+
+.option:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.stock-warning {
+  font-size: 0.8rem;
+  color: #dc3545;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.option.active .stock-warning {
+  color: #ffeb3b;
+}
+.option input {
+  margin-right: 0.6rem;
+}
+.custom-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.1rem;
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+.profile-page {
+  background: #f8f9fa;
+  padding: 2rem 0;
+}
+.profile-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.profile-icon {
+  color: #e74c3c;
+  font-size: 2rem;
+}
+.profile-form {
+  display: grid;
+  gap: 1rem;
+}
+.profile-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.profile-form input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  background: #fafafa;
+}
+.save-btn {
+  align-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
